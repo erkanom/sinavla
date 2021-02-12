@@ -11,67 +11,51 @@ class MainPage extends StatelessWidget {
     DateTime dob = DateTime.parse('2021-06-27');
     Duration dur = dob.difference(DateTime.now());
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amber[800],
+        title: Text(
+          'SINAVLA',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
+      ),
       body: Column(
         children: [
-          SizedBox(
-            height: MediaQuery.of(context).size.height * (0.5 / 10),
-          ),
           Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                CircleAvatar(
-                  radius: MediaQuery.of(context).size.height * (1.0 / 10),
-                  child: Image.asset('assets/bilkent.png'),
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      height: MediaQuery.of(context).size.height * (1.0 / 20),
-                      width: MediaQuery.of(context).size.width / 2,
-                      child: Text('Bilkent Universitesi'),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: MediaQuery.of(context).size.height * (1.0 / 20),
-                      width: MediaQuery.of(context).size.width / 2,
-                      child: Text('Bilgisayar Muhendisligi'),
-                    ),
-                  ],
-                )
-              ],
+            height: MediaQuery.of(context).size.height * (5.0 / 30),
+            child: Center(
+              child: Text(
+                'YENİ HAYATINA',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30),
+              ),
             ),
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * (1.0 / 30),
           ),
           countDown(dur, 0, context),
           SizedBox(
             height: MediaQuery.of(context).size.height * (1.0 / 30),
-            child: Text('Gun'),
+            child: Text('GÜN'),
           ),
           countDown(dur, 1, context),
           SizedBox(
             height: MediaQuery.of(context).size.height * (1.0 / 30),
-            child: Text('Saat'),
+            child: Text('SAAT'),
           ),
           countDown(dur, 2, context),
           SizedBox(
             height: MediaQuery.of(context).size.height * (1.0 / 30),
-            child: Text('Dakika'),
+            child: Text('DAKİKA'),
           ),
           countDown(dur, 3, context),
           SizedBox(
             height: MediaQuery.of(context).size.height * (1.0 / 30),
-            child: Text('Saniye'),
+            child: Text('SANİYE'),
           ),
           SizedBox(
             child: Text(
               'KALDI',
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ),
           Expanded(

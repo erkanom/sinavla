@@ -22,15 +22,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
   void _onItemTapped(int index) {
     setState(() {
       if (index == 0) {
-        Navigator.push(context,
+        Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (BuildContext context) => MainPage()));
       }
       if (index == 1) {
-        Navigator.push(context,
+        Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (BuildContext context) => SoruPage()));
       }
       if (index == 2) {
-        Navigator.push(
+        Navigator.pushReplacement(
             context,
             MaterialPageRoute(
                 builder: (BuildContext context) => StatisticPage()));
