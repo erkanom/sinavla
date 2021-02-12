@@ -49,12 +49,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
             label: 'Ana sayfa',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.my_library_books_sharp),
-            label: 'Sorularim',
+            icon: Icon(Icons.add),
+            label: 'Soru Ekle',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Istatistiklerim',
+            icon: Icon(Icons.image_search_rounded),
+            label: 'Sorular',
           ),
         ],
         currentIndex: _selectedIndex,

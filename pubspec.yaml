@@ -30,8 +30,16 @@ dependencies:
   cupertino_icons: ^1.0.0
   countdown_flutter: ^0.1.2
   provider: ^4.3.3
-  edge_detection: ^1.0.5
-  google_fonts: ^1.1.2
+  opencv: ^1.0.4
+  flutter_cache_manager: ^2.1.1
+  edge_detection:
+    git:
+      url: https://github.com/erkanom/edge_detection
+  
+  
+  
+  
+  
   
   
  
