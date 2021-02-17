@@ -40,11 +40,12 @@ class _SoruPageState extends State<SoruPage> {
                     )
                   : imageNew),
           FloatingActionButton(
+              child: Icon(Icons.add),
               onPressed: () => {
                     _insert(),
                   }),
-          RaisedButton(onPressed: () => {_deleteAll()}),
-          RaisedButton(onPressed: () => {_query()}),
+          //RaisedButton(onPressed: () => {_deleteAll()}),
+          //RaisedButton(onPressed: () => {_query()}),
           Expanded(child: BottomNavBar()),
         ],
       ),
