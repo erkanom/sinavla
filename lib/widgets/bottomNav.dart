@@ -3,7 +3,7 @@ import 'package:sinavla/models/NavIndex.dart';
 import 'package:sinavla/views/MainPage.dart';
 import 'package:sinavla/views/SoruPage.dart';
 import 'package:provider/provider.dart';
-import 'package:sinavla/views/Statistic.dart';
+import 'package:sinavla/views/Questions.dart';
 
 class BottomNavBar extends StatefulWidget {
   BottomNavBar({Key key}) : super(key: key);
@@ -30,10 +30,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
             MaterialPageRoute(builder: (BuildContext context) => SoruPage()));
       }
       if (index == 2) {
-        Navigator.pushReplacement(
+        Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (BuildContext context) => StatisticPage()));
+                builder: (BuildContext context) => QuestionPage()));
       }
       Provider.of<NavIndex>(context, listen: false).changeIndex(index);
     });
